@@ -822,9 +822,6 @@ challengeModeBtn.addEventListener('click', () => {
     }
 });
 
-// 创建触摸控制
-createTouchControls();
-
 // 初始化游戏
 initSnake();
 generateFood();
