@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>赛博贪吃蛇</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- 引入赛博朋克风格字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 赛博朋克风格标题 -->
+        <h1>CYBER SNAKE</h1>
+        <div class="sub-title">SYSTEM INITIALIZED</div>
+        <div class="game-info">
+            <div class="score">分数: <span id="score">0</span></div>
+            <div class="high-score">最高分: <span id="high-score">0</span></div>
+        </div>
+        <div class="game-mode">
+            <button id="classic-mode-btn" class="mode-btn active">经典模式</button>
+            <button id="challenge-mode-btn" class="mode-btn">挑战模式</button>
+        </div>
+        <canvas id="game-board" width="400" height="400"></canvas>
+        <div class="controls">
+            <button id="start-btn">开始游戏</button>
+            <button id="pause-btn">暂停</button>
+        </div>
+        <!-- 移动设备触摸控制区域 -->
+        <div class="touch-controls">
+            <div id="up" class="touch-btn">↑</div>
+            <div class="touch-row">
+                <div id="left" class="touch-btn">←</div>
+                <div id="down" class="touch-btn">↓</div>
+                <div id="right" class="touch-btn">→</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
