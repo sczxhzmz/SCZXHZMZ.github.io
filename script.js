@@ -827,5 +827,21 @@ initSnake();
 generateFood();
 draw();
 
+// 添加初始提示文字
+function drawStartPrompt() {
+    ctx.save();
+    ctx.fillStyle = 'rgba(0, 230, 204, 0.8)';
+    ctx.font = 'bold 18px Orbitron, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('点击开始游戏', canvas.width / 2, canvas.height / 2);
+    ctx.restore();
+}
+
+// 绘制初始提示
+if (isGameOver) {
+    drawStartPrompt();
+}
+
 // 禁用暂停按钮
 pauseBtn.disabled = true;
